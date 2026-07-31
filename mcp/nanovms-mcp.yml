@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://github.com/nanovms/ops-mcp
+server:
+  name: ops-mcp
+  description: Official Model Context Protocol server for working with unikernels
+    using the nanos/ops toolchain. Lets an MCP client (e.g. Claude Desktop) list and
+    create unikernel instances and images through the local ops toolchain.
+  transport: stdio
+  language: go
+  repo: https://github.com/nanovms/ops-mcp
+  install: build from source (go build) and register the binary in your MCP client config
+tools:
+- name: List instances
+  description: List running unikernel instances via the ops toolchain.
+- name: List images
+  description: List built unikernel images via the ops toolchain.
+- name: Instance create
+  description: Create a unikernel instance from a named image (e.g. Instance create redis-server).
+notes: Early-stage server; the README explicitly invites suggestions on tool design.

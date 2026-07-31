@@ -1,8 +1,26 @@
 aid: nanovms
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nanovms.png
 name: NanoVMs
-description: NanoVMs is a company surfaced as a portfolio company of bloomberg-beta, initialized-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: NanoVMs builds unikernel infrastructure that lets developers run a single
+  application as its own lightweight, secure virtual machine with no operating system
+  and no devops. Its open-source toolchain centers on OPS (the ops CLI, ops.city) for
+  building and deploying unikernels to any cloud in seconds, and Nanos (nanos.org), a
+  kernel designed to run one and only one application in a virtualized environment.
+  The project ships editor extensions, a Terraform provider, a Homebrew tap, a package
+  repository (repo.ops.city), and an official MCP server (ops-mcp) for driving the
+  toolchain from AI agents. NanoVMs is a Bloomberg Beta and Initialized Capital
+  portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/nanovms/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Unikernels
+- Virtualization
+- Cloud Infrastructure
+- DevOps
+- Open Source
+- Developer Tools
+- CLI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,44 @@ maintainers:
 common:
 - type: Website
   url: https://nanovms.com/
+- type: DeveloperPortal
+  url: https://docs.ops.city/
+- type: Documentation
+  url: https://docs.ops.city/
+- type: GettingStarted
+  url: https://docs.ops.city/ops/getting_started.md
+- type: GitHubOrganization
+  url: https://github.com/nanovms
+- type: SourceCode
+  url: https://github.com/nanovms/ops
+- type: Blog
+  url: https://nanovms.com/blog
+- type: Support
+  url: https://forums.nanovms.com
+- type: PackageRepository
+  url: https://repo.ops.city/
+- type: ChangeLog
+  url: https://github.com/nanovms/ops/releases
+- type: ChangeLog
+  url: changelog/nanovms-changelog.yml
+- type: CLI
+  url: cli/nanovms-cli.yml
+- type: MCPServer
+  url: mcp/nanovms-mcp.yml
+- type: Packages
+  url: packages/nanovms-packages.yml
+- type: SDKs
+  url: packages/nanovms-packages.yml
+- type: Components
+  url: components/nanovms-components.yml
+- type: LLMsTxt
+  url: llms/nanovms-llms.txt
+- type: Lifecycle
+  url: lifecycle/nanovms-lifecycle.yml
+- type: DomainSecurity
+  url: security/nanovms-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1

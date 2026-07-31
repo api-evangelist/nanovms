@@ -1,0 +1,52 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/nanovms/ops/releases
+scheme: semver
+distribution: github-releases
+current_version: 0.1.46
+notes: The ops CLI ships as SemVer-tagged GitHub releases; each release aggregates
+  merged pull requests into a "What's Changed" list. No release in the recent window
+  flagged a breaking change (ops is pre-1.0, 0.x line). The Nanos kernel is released
+  separately at https://github.com/nanovms/nanos/releases and pinned per build via
+  --nanos-version. Recent window only; the live releases page is the source of truth.
+entries:
+- version: 0.1.46
+  date: '2026-03-22'
+  breaking: false
+  highlights:
+  - Buffer putSnapshot for larger image uploads
+  - OCI provider improvements (no-public-IP option, custom image lookup, serial logs,
+    zone stripping, ARM/UEFI image capabilities)
+  - Internal exec/qemu-img refactors and dependency bumps (Go, gRPC, OpenTelemetry)
+- version: 0.1.45
+  date: '2025-12-19'
+  breaking: false
+  highlights:
+  - Fix Digital Ocean image creation
+  - Allow UserData when creating an instance
+  - BackgroundDetach option for detached QEMU process execution
+  - GCP instance restart; Scaleway SCALEWAY_PROJECT_ID and region-format fix
+- version: 0.1.44
+  date: '2025-10-25'
+  breaking: false
+  highlights:
+  - New Hetzner cloud provider
+  - New Scaleway cloud provider
+  - AWS provider migrated to aws-sdk-go-v2
+  - image ls/tree/cp over bootfs; AWS crons; ARM architecture checks
+- version: 0.1.43
+  date: '2024-12-08'
+  breaking: false
+  highlights:
+  - Image search (like pkg search); JSON output for image tree and pkg contents
+  - Cross-arch and Linux compose support
+  - Local package delete support
+  - GCP C4A (ARM-based Google Axion) instance types
+- version: 0.1.42
+  date: '2024-08-04'
+  breaking: false
+  highlights:
+  - CPU architecture support for package search and list
+  - Arch checks for running ARM payloads on x86
+  - Linode migrated to the linodego client
+  - Azure gallery and gen2 image/package improvements

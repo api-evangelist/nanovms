@@ -1,0 +1,72 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.ops.city/ops/basic_usage.md
+name: ops
+description: OPS is the first-party command-line tool for building and running Nanos
+  unikernels locally and deploying them to any cloud with no devops.
+repo: https://github.com/nanovms/ops
+docs: https://docs.ops.city/
+install:
+- method: script
+  command: curl https://ops.city/get.sh -sSfL | sh
+- method: homebrew
+  command: brew install nanovms/ops/ops
+  tap: https://github.com/nanovms/homebrew-ops
+- method: source
+  command: go install github.com/nanovms/ops
+  docs: https://docs.ops.city/ops/developer/source-installation.md
+requirements:
+- QEMU 2.5 or greater (local hypervisor)
+commands:
+- name: ops run
+  summary: Run a compiled executable (e.g. a Go binary) as a unikernel.
+- name: ops pkg
+  summary: Work with packages; load and run interpreted-language apps from packages.
+  subcommands:
+  - ops pkg load    # download a package and run the app (e.g. eyberg/node:20.5.0)
+  - ops pkg list    # list available packages from repo.ops.city
+- name: ops image
+  summary: Build and manage unikernel disk images.
+- name: ops instance
+  summary: Create, list and manage running unikernel instances (local or cloud).
+- name: ops volume
+  summary: Create and attach persistent storage volumes.
+- name: ops net
+  summary: Manage unikernel networking.
+- name: ops deploy
+  summary: Deploy a unikernel image to a target cloud.
+- name: ops version
+  summary: Print the installed ops version.
+resource_surface:
+- images
+- instances
+- volumes
+- packages
+- klibs
+- crons
+- networking
+clouds:
+- aws
+- azure
+- google-cloud
+- digital-ocean
+- hetzner
+- ibm
+- linode
+- oci
+- scaleway
+- upcloud
+- vultr
+hypervisors:
+- qemu
+- firecracker
+- bhyve
+- docker
+- hyper-v
+- openvmm
+- proxmox
+- virtualbox
+- vsphere
+- openstack
+notes: The ops binary is catalogued as a package in packages/nanovms-packages.yml;
+  this file captures its command/resource surface.

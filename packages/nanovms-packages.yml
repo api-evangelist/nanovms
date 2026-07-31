@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/nanovms, https://pkg.go.dev/github.com/nanovms/ops
+packages:
+- language: go
+  registry: go-modules
+  name: github.com/nanovms/ops
+  url: https://pkg.go.dev/github.com/nanovms/ops
+  install: go install github.com/nanovms/ops
+  official: true
+  description: OPS unikernel build/run toolchain, importable as a Go module and used
+    as the ops CLI.
+- language: go
+  registry: homebrew
+  name: nanovms/ops/ops
+  url: https://github.com/nanovms/homebrew-ops
+  install: brew install nanovms/ops/ops
+  official: true
+  description: Homebrew formula (tap nanovms/ops) that installs the ops CLI.
+- language: go
+  registry: terraform-registry
+  name: nanovms/ops
+  url: https://github.com/nanovms/terraform-provider-ops
+  install: terraform provider "nanovms/ops"
+  official: true
+  description: Terraform provider for running unikernels with OPS.
+notes: NanoVMs ships an open-source toolchain (ops/nanos), not a hosted REST API, so
+  these are build/deploy tooling packages rather than API client SDKs. IDE extensions
+  (VS Code, IntelliJ) are catalogued in components/nanovms-components.yml.

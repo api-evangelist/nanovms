@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/nanovms/ops/releases
+versioning:
+  scheme: semver
+  distribution: github-releases
+  releases: https://github.com/nanovms/ops/releases
+  notes: The ops CLI is versioned with SemVer tags and published as GitHub releases;
+    the nanos kernel is released separately at https://github.com/nanovms/nanos/releases
+    and pinned per build via --nanos-version.
+support:
+  community_forum: https://forums.nanovms.com
+  professional_services: https://nanovms.com/services
+status_page: null
+deprecation:
+  policy_url: null
+  sunset_header: false
+notes: No public status page or formal deprecation policy was found; ops/nanos are
+  open-source toolchains rather than a hosted service. Release notes on GitHub serve
+  as the changelog (wired as a ChangeLog pointer).

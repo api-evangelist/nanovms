@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/nanovms
+description: First-party IDE / editor tooling that surfaces the OPS unikernel toolchain
+  inside developer environments. Distinct from the ops CLI (cli/) and the Go packages
+  (packages/).
+families:
+- name: Editor extensions
+  components:
+  - name: OPS for Visual Studio Code
+    repo: https://github.com/nanovms/ops-vscode
+    language: typescript
+    docs: https://docs.ops.city/ops/tools/vscode.md
+    official: true
+  - name: OPS IntelliJ plugin
+    repo: https://github.com/nanovms/ops-intellij
+    language: kotlin
+    official: true
+notes: These embed OPS build/run flows into editors; they are not embeddable web/UI
+  widgets in the Stripe-Elements sense, but are the provider's client-side developer
+  components.
