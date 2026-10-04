@@ -50,7 +50,7 @@ tags:
 - Virtualization
 - Cloud Infrastructure
 - DevOps
-- Open-Source
+- Open Source
 - Developer Tools
 - CLI
 tags_raw:
@@ -62,6 +62,7 @@ tags_raw:
 - Open Source
 - Developer Tools
 - CLI
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
